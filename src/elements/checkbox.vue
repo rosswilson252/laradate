@@ -16,19 +16,6 @@
     import mixin from '../mixin'
 
     export default {
-
-        mixins: [mixin],
-
-        props: {
-            model: {
-                type: Boolean,
-                twoWay: true,
-                coerce(value) {
-                    return !!value
-                 }
-            },
-        }
-
-
+        mixins: [mixin]
     }
 </script>

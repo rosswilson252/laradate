@@ -30,18 +30,6 @@
     import mixin from '../mixin'
 
     export default {
-
-        mixins: [mixin],
-
-        props: {
-            type: {
-                type: String,
-                default: 'text'
-            },
-            rows: {
-                type: String,
-                default: 3
-            }
-        },
+        mixins: [mixin]
     }
 </script>

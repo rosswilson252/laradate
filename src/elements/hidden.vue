@@ -18,6 +18,5 @@
                 default: true
             }
         }
-
     }
 </script>
