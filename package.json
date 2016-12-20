@@ -1,6 +1,6 @@
 {
   "name": "laradate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/laradate.common.js",
   "jsnext:main": "dist/laradate.es2015.js",
   "description": "A plugin and mixin to handle form requests and validation with Laravel styled with bootstrap 4.",
