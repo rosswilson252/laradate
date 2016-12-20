@@ -42,7 +42,6 @@ export default function (Vue) {
                             this.$options.laradator.inputs[scope.name].length,
                             scope.$options.laradation)
 
-
                         this.$watch(() => scope.$options.laradation.value, () => Vue.set(this.$options.laradator, 'generalErrors', []))
                     }
                 },
@@ -52,7 +51,7 @@ export default function (Vue) {
 
                         if (!this.$options.laradator.inputs.hasOwnProperty(scope.name)) return
 
-                        this.$options.laradator.inputs[scope.name].$remove(scope.$options.laradation);
+                        delete this.$options.laradator.inputs[scope.name]
                     }
                 },
 
@@ -74,7 +73,6 @@ export default function (Vue) {
                     if (typeof action == 'function') {
                         action = action.call(this)
                     }
-
 
                     let data = this.getRequestData();
 
@@ -142,7 +140,6 @@ export default function (Vue) {
                             delete $return[key]
                         }
                     }
-
 
                     return $return;
                 },
